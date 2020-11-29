@@ -6,6 +6,7 @@ import com.manager.CountryService;
 import com.module.CountryManagerModule;
 import com.module.CountryModule;
 import com.module.MySqlModule;
+import com.test.SimpleTest;
 import dagger.Component;
 
 import javax.inject.Singleton;
@@ -20,4 +21,5 @@ public interface CountryComponent {
     void inject(CountryController countryController);
     void inject(CountryService countryService);
 
+    void inject(SimpleTest simpleTest);
 }
